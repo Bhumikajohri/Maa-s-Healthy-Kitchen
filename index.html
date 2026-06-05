@@ -4,143 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellness by Mom</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FAF7F2;
-            color: #333;
-        }
-        header {
-            background-color: #D8C4B6;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        nav {
-            background-color: #EADBC8;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 10px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .product {
-            background-color: #fff3e0;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .product img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-        .product h3 {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-        .product p {
-            margin: 5px 0;
-        }
-        .product button {
-            background-color: #f9a825;
-            border: none;
-            padding: 10px 15px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        .product button:hover {
-            background-color: #f57f17;
-        }
-        footer {
-            background-color: #f9a825;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+
+    <!-- CSS LINK (IMPORTANT) -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-text">
         <h1>Wellness by Mom</h1>
         <p>Wholesome Homemade Snacks Crafted with a Mother's Care</p>
-    </header>
 
-    <nav>
-        <a href="#products">Products</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <a href="#products" class="btn">Shop Now</a>
+        <a href="#contact" class="btn secondary">WhatsApp Order</a>
+    </div>
+</header>
 
-    <section id="products">
-        <h2 style="text-align:center;">Our Products</h2>
-        <div class="products">
-            <div class="product">
-                <img src="ragi-biscuit.jpg" alt="Sugar-Free Ragi Biscuit">
-                <h3>Sugar-Free Ragi Biscuit</h3>
-                <p>Healthy, homemade, and perfect with tea.</p>
-                <p>₹150 / 250g</p>
-                <button>Add to Cart</button>
-            </div>
+<!-- PRODUCTS -->
+<section id="products" class="section">
+    <h2>Our Products</h2>
 
-            <div class="product">
-                <img src="iron-laddoo.jpg" alt="Iron-Rich Laddoo">
-                <h3>Iron-Rich Laddoo</h3>
-                <p>Boosts energy and iron for moms.</p>
-                <p>₹200 / 6 pcs</p>
-                <button>Add to Cart</button>
-            </div>
+    <div class="products">
 
-            <div class="product">
-                <img src="chai-crackers.jpg" alt="Healthy Chai Crackers">
-                <h3>Healthy Chai Crackers</h3>
-                <p>Crunchy, wholesome snacks for tea-time.</p>
-                <p>₹150 / 200g</p>
-                <button>Add to Cart</button>
-            </div>
+        <div class="product">
+            <img src="ragi-biscuit.jpg" alt="Ragi Biscuit">
+            <h3>Sugar-Free Ragi Biscuit</h3>
+            <p>Healthy homemade tea-time snack</p>
+            <p>₹150 / 250g</p>
+            <button>Add to Cart</button>
         </div>
-    </section>
 
-    <section id="about">
-        <h2 style="text-align:center;">About Us</h2>
-        <p style="max-width:600px; margin:auto; text-align:center;">
-            Healthy Moms Snacks is a mother-daughter home business dedicated to making
-            sugar-free, healthy Indian snacks that taste like home. We focus on traditional recipes
-            with modern health twists so you can enjoy your snacks guilt-free.
-        </p>
-    </section>
+        <div class="product">
+            <img src="iron-laddoo.jpg" alt="Iron Laddoo">
+            <h3>Iron-Rich Laddoo</h3>
+            <p>Boost energy & health</p>
+            <p>₹200 / 6 pcs</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <section id="contact" class="section">
-    <h2>Get in Touch</h2>
+        <div class="product">
+            <img src="chai-crackers.jpg" alt="Chai Crackers">
+            <h3>Healthy Chai Crackers</h3>
+            <p>Crunchy tea-time snack</p>
+            <p>₹150 / 200g</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <p style="text-align:center;">
-        We’re always happy to help you with healthy homemade snacks 💛
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why-choose">
+    <h2>Why Moms Love Us</h2>
+    <ul>
+        <li>No Refined Sugar</li>
+        <li>No Preservatives</li>
+        <li>Homemade with Care</li>
+        <li>Healthy for Kids & Families</li>
+    </ul>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>Our Story</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Wellness by Mom started in our home kitchen with love and care.
+        We believe in healthy, homemade snacks that bring families together.
     </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Get in Touch</h2>
 
     <div class="contact-box">
         <p>📞 +91 9310602135</p>
@@ -155,9 +92,10 @@
     </div>
 </section>
 
-    <footer>
-        &copy; 2026 Healthy Moms Snacks. All rights reserved.
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Wellness by Mom. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
